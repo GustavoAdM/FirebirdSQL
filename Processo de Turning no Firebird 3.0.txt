@@ -29,4 +29,5 @@ Os procedimentos descritos abaixo podem ser executados em qualquer ordem, pois p
 7.1 Otimização de Recursos: Configure o Firebird para utilizar mais recursos do sistema caso necessario.
 
 8. Backup e Restore:
-8.1 Manutenção de Dados: Realize um backup e restore para resolver problemas de lentidão, dados corrompidos e índices inativos. O backup é essencial para preservar os dados e garantir a recuperação em caso de falhas. Já o restore permite restaurar o banco de dados a partir de um estado anterior, corrigindo possíveis problemas.
+8.1 Manutenção de Dados: Realize um backup para proteger seus dados e um restore para corrigir problemas como lentidão, dados corrompidos e índices inativos. Este processo é vital para a integridade e desempenho do banco de dados.
+8.2 Configuração de Restore: Antes de iniciar a restauração, configure o tamanho da página (page size) e os buffers para valores maiores. Isso otimiza a alocação de memória e melhora a eficiência do processo de restauração.
