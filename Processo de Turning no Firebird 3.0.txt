@@ -3,16 +3,16 @@ Processo de Otimização no Firebird 3.0 superior.
 Os procedimentos descritos abaixo podem ser executados em qualquer ordem, pois podem variar conforme o contexto específico. É possível iniciar o diagnóstico pelas consultas SQL e concluir com a análise do hardware do servidor.
 
 1. Diagnóstico do Servidor:
-1.1 Memória RAM: Verifique a quantidade de memória RAM disponível.
-1.2 Processador: Monitore o consumo e verifique a quantidade de núcleos.
-1.3 Armazenamento: Identifique se é HD ou SSD e a velocidade de leitura e escrita.
+1.1 Memória RAM: Verifique a quantidade de memória RAM disponível. Isso é crucial para garantir que o servidor tenha recursos suficientes para executar o Firebird e as consultas de maneira eficiente.
+1.2 Processador: Monitore o consumo de CPU e verifique a quantidade de núcleos. Um processador mais robusto pode lidar melhor com cargas de trabalho intensivas.
+1.3 Armazenamento: Identifique se o armazenamento é um disco rígido (HD) ou um disco de estado sólido (SSD). Além disso, avalie a velocidade de leitura e escrita, pois isso afeta diretamente o desempenho do banco de dados.
 
 2. Rede:
-2.1 Consumo da Rede: Analise o consumo de banda.
-2.2 Latência: Avalie o ping entre o computador do usuário e o servidor.
+2.1 Consumo da Rede: Monitore o consumo de banda para identificar possíveis gargalos. Utilize ferramentas de análise de rede para detectar tráfego excessivo ou inesperado que possa afetar a performance do Firebird.
+2.2 Latência: Avalie a latência da rede medindo o tempo de resposta (ping) entre o computador do usuário e o servidor. Uma latência baixa é essencial para a rápida comunicação e processamento das transações do banco de dados.
 
 3. Limpeza de Cache:
-3.1 Sweep no Firebird: Realize uma limpeza para liberar registros antigos.
+3.1 Sweep no Firebird: Realize uma limpeza para liberar registros antigos. O processo de sweep é fundamental para manter o desempenho do banco de dados. Ele remove registros marcados como excluídos, liberando espaço e melhorando a eficiência das consultas.
 
 4. Índices e Estatísticas:
 4.1 Índices Inativos: Realize uma inspeção detalhada dos índices atualmente não utilizados. Avalie a necessidade de reativá-los para garantir que sejam considerados nas operações de consulta, otimizando assim o desempenho das buscas.
@@ -29,4 +29,4 @@ Os procedimentos descritos abaixo podem ser executados em qualquer ordem, pois p
 7.1 Otimização de Recursos: Configure o Firebird para utilizar mais recursos do sistema caso necessario.
 
 8. Backup e Restore:
-8.1 Manutenção de Dados: Execute um backup e restore para resolver problemas de lentidão, dados corrompidos e índices inativos.
+8.1 Manutenção de Dados: Realize um backup e restore para resolver problemas de lentidão, dados corrompidos e índices inativos. O backup é essencial para preservar os dados e garantir a recuperação em caso de falhas. Já o restore permite restaurar o banco de dados a partir de um estado anterior, corrigindo possíveis problemas.
