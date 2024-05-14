@@ -9,5 +9,5 @@ Conteúdos que você encontrará aqui:
 
 - Scripts de Manutenção: Scripts .bat personalizados para facilitar o backup e o restore do banco de dados, garantindo a segurança e a integridade das informações.
 
--Guias de Migração: Manuais detalhados para a migração entre as versões do Firebird, do 2.5 para o 3.0 e do 3.0 para o 5.0, assegurando uma transição suave e eficiente.
+- Guias de Migração: Manuais detalhados para a migração entre as versões do Firebird, do 2.5 para o 3.0 e do 3.0 para o 5.0, assegurando uma transição suave e eficiente.
 
