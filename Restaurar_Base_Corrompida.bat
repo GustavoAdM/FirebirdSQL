@@ -2,9 +2,9 @@
 
 PATH=%PATH%;"C:\Program Files\Firebird\Firebird_3_0"
 
-SET BASEATUAL="localhost/3051:C:\JunsoftERP\Database\BASE_INCIAL.FDB"
-SET BACKUP="C:\JunsoftERP\Database\BACKUP_BASE_INICIAL.FBK"
-SET BASENOVA="localhost/3051:C:\JunsoftERP\Database\BASE_INICIAL_NOVA.FDB"
+SET BASEATUAL="localhost/3051:C:\Database\BASE_INCIAL.FDB"
+SET BACKUP="C:\Database\BACKUP_BASE_INICIAL.FBK"
+SET BASENOVA="localhost/3051:C:\Database\BASE_INICIAL_NOVA.FDB"
 
 SET ISC_USER=SYSDBA	
 
